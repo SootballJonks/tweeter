@@ -5,8 +5,9 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(230, 180, 227);
-  background-image: url("/images/hatlob_transparency.png");
+  background-color: #053600;
+  background-image: url("/images/skulls.png");
   background-size: 400px;
   background-position: center;
+  color: #fff;
 }
