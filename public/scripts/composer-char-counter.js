@@ -4,9 +4,9 @@ $(document).ready(() => {
   $("#tweet-text").on('input', () => {
     counter[0].value = 140 - $("#tweet-text").val().length;
     if (counter[0].value < 0) {
-      counter.css("color", "red");
+      counter.addClass("counter-negative");
     } else {
-      counter.css("color", "black");
+      counter.removeClass("counter-negative");
     }
   });
 })

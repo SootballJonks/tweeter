@@ -9,7 +9,7 @@ textarea {
   width: 500px;
   margin-bottom: 5px;
   border: none;
-  border-bottom: 5px solid rgb(109, 109, 109);
+  border-bottom: 5px solid #6d6d6d;
   background-color: #f4f1ec;
   resize: none;
   outline: none;
@@ -36,6 +36,10 @@ textarea:hover {
 .counter {
   float: right;
   font-family: 'Bungee', sans-serif;
+}
+
+.counter-negative {
+  color: red;
 }
 
 .new-tweet button {
