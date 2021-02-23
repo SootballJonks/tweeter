@@ -1,4 +1,4 @@
-header {
+body > header {
   height: 400px;
   width: 100%;
   display: flex;
@@ -10,4 +10,8 @@ header {
   background-size: 400px;
   background-position: center;
   color: #fff;
+}
+
+body > header img {
+  padding-top: 1em;
 }
