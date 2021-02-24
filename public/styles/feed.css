@@ -6,6 +6,7 @@
 
 article.tweet {
   border: 3px solid #ffb325;
+  margin: 1em;
   
 }
 
@@ -37,7 +38,7 @@ article header > a {
   color: #313131;
 }
 
-article div.posted {
+article div.tweet-content {
   margin-left: 0.5em;
   margin-right: 0.5em;
   border-bottom: 3px solid #ffb325;
