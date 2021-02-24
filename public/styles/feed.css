@@ -5,7 +5,7 @@
 }
 
 article.tweet {
-  border: 3px solid #6d6d6d;
+  border: 3px solid #ffb325;
   
 }
 
@@ -34,13 +34,13 @@ article header > div > p {
 article header > a {
   margin-right: 1em;
   text-decoration: none;
-  color: #f4f1ec;
+  color: #313131;
 }
 
 article div.posted {
   margin-left: 0.5em;
   margin-right: 0.5em;
-  border-bottom: 3px solid #6d6d6d;
+  border-bottom: 3px solid #ffb325;
 }
 
 
@@ -60,11 +60,11 @@ footer > div {
 }
 
 article.tweet:hover {
-  box-shadow: 10px 10px #969696;
-  text-shadow: .5px .5px #969696;
+  box-shadow: 10px 10px #ffa825;
+  text-shadow: .5px .5px #ffb325;
 }
 
 article.tweet:hover .username {
-  color: #969696;
+  color: #ffb325;
 
 }

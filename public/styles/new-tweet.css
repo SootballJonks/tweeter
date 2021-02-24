@@ -9,8 +9,9 @@ textarea {
   width: 500px;
   margin-bottom: 5px;
   border: none;
-  border-bottom: 5px solid #6d6d6d;
-  background-color: #f4f1ec;
+  border-bottom: 5px solid #ffb325;
+  color: #ffb325;
+  background-color: #313131;
   resize: none;
   outline: none;
   overflow-y: scroll;
@@ -21,7 +22,7 @@ textarea::-webkit-scrollbar {
 }
 
 textarea::-webkit-scrollbar-thumb {
-  background: black;
+  background: #cf5300;
   border-radius: 5px;
 }
 
@@ -43,7 +44,7 @@ textarea:hover {
 }
 
 .new-tweet button {
-  background: #4056A1;
+  background: #cf5300;
   font-family: 'Bungee', sans-serif;
   color: #fff;
   border: none;

@@ -5,13 +5,17 @@ body > header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #053600;
-  background-image: url("/images/skulls.png");
-  background-size: 400px;
+  background-color: #361600;
+  background-image: url("/images/header-banner.png");
   background-position: center;
-  color: #fff;
 }
 
 body > header img {
   padding-top: 1em;
+}
+
+body > header > div > h2 {
+  color: #fff;
+
+  margin-top: 0;
 }
