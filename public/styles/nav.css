@@ -1,9 +1,12 @@
 nav {
   height: 120px;
-  width: auto;
   background-color: #4056A1;
   color: #fff;
   padding: 1.5em;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
 
 nav span {
