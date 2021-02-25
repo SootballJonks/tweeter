@@ -50,3 +50,11 @@ textarea:hover {
   border: none;
   padding: 5px;
 }
+
+.popup-error {
+  display: none;
+  font-weight: bolder;
+  margin-bottom: 1em;
+  padding: 5px;
+  color: red;
+}

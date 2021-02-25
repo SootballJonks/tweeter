@@ -103,11 +103,14 @@ $(document).ready(() => {
     const tweetContent = $('#tweet-text');
 
     if (!tweetContent.val().length) {
-      alert(`First thou must type a message before it may be heard...`);
+      $(".popup-error").text(`First thou must type a message before it may be heard...`);
+      $(".popup-error").slideDown();
     } else if (tweetContent.val().length > 140) {
-      alert(`How gracious of thee, to provide more than what can be posted...`);
+      $(".popup-error").text(`How gracious of thee, to provide more than what can be posted...`);
+      $(".popup-error").slideDown();
     } else {
       const text = tweetContent.serialize();
+      $(".popup-error").slideUp();
       postTweet(text);
       resetTextArea();
     }
