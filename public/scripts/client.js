@@ -5,7 +5,7 @@
 */
 
 
-//------- HELPER FUNCTIONS (please consider moving these) ------
+//------- HELPER FUNCTIONS (consider moving these) ------
 
 const resetTextArea = () => {
   $('output.counter')[0].value = 140;
@@ -25,14 +25,14 @@ const datePosted = (object) => {
     return `${(time / 60 / 60 / 24).toFixed(0)} days ago`;
   } else {
     return `${(time / 60 / 60 / 24 / 365).toFixed(0)} years ago`;
-  } 
-}
+  }
+};
 
 const escape = (str) => {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
-}
+};
 
 //-------------------------------------------
 
@@ -65,7 +65,7 @@ $(document).ready(() => {
     `;
 
     return $element;
-  }
+  };
 
   const renderTweets = (tweets) => {
     $('#feed').empty();
@@ -74,7 +74,7 @@ $(document).ready(() => {
       const $tweet = createTweetElement(obj);
       $('#feed').prepend($tweet);
     }
-  }
+  };
 
   const loadTweets = () => {
     $.ajax({
@@ -82,9 +82,9 @@ $(document).ready(() => {
       method: 'GET'
     })
       .then((result) => {
-        renderTweets(result)
-      })
-  }
+        renderTweets(result);
+      });
+  };
 
   loadTweets();
 
@@ -94,8 +94,8 @@ $(document).ready(() => {
       .then((result) => {
         console.log(result);
         loadTweets();
-      })
-  }
+      });
+  };
 
   $('#crush-ember').on('submit', (event) => {
     event.preventDefault();
@@ -118,16 +118,16 @@ $(document).ready(() => {
       postTweet(text);
       resetTextArea();
     }
-  })
+  });
 
   //text-box slidedown animation
   $(".show-textarea").on('click', () => {
     $("section.new-tweet").slideToggle();
     $("#tweet-text").focus();
-  })
+  });
 
   //Homeward Bone button
   $(".scroll-button").on('click', () => {
     $(window).scrollTop(0);
-  })
-})
+  });
+});

@@ -42,36 +42,38 @@
         <i class="fas fa-angle-double-down"></i>
       </div>
     </nav>
-    <header>
-      <div>
-        <img src="/assets/images/pfps/restricted/knight-hex.png">
-      </div>
-      <br>
-      <div>
-        <h2>Ashen One</h2>
-      </div>
-    </header>
-
-    <!-- Page-specific (main) content here -->
-
-    <!-- Compose Tweet -->
-    <main class="container">
-      <section class="new-tweet">
-        <h2>Add Kindling To The Fire</h2>
-        <div class="popup-error"></div>
-        <form method="POST" action="/tweets" id="crush-ember">
-          <textarea name="text" id="tweet-text" placeholder="Speak thine heart's desire..."></textarea>
-          <div>
-            <button type="submit">Crush Ember</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
-      <!-- Ember Feed -->
-      <section id="feed">
-        <!-- check client.js for loading tweets -->
-      </section>
-    </main>
-    <button class="scroll-button"><img src="assets/images/homeward-bone.png"></button>
+    <div>
+      <header>
+        <div>
+          <img src="/assets/images/pfps/restricted/knight-hex.png">
+        </div>
+        <br>
+        <div>
+          <h2>Ashen One</h2>
+        </div>
+      </header>
+  
+      <!-- Page-specific (main) content here -->
+  
+      <!-- Compose Tweet -->
+      <main class="container">
+        <section class="new-tweet">
+          <h2>Add Kindling To The Fire</h2>
+          <div class="popup-error"></div>
+          <form method="POST" action="/tweets" id="crush-ember">
+            <textarea name="text" id="tweet-text" placeholder="Speak thine heart's desire..."></textarea>
+            <div>
+              <button type="submit">Crush Ember</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>
+        <!-- Ember Feed -->
+        <section id="feed">
+          <!-- check client.js for loading tweets -->
+        </section>
+      </main>
+      <button class="scroll-button"><img src="assets/images/homeward-bone.png"></button>
+    </div>
   </body>
 </html>

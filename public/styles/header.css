@@ -1,4 +1,4 @@
-body > header {
+body > div > header {
   height: 400px;
   width: 100%;
   display: flex;
@@ -10,11 +10,21 @@ body > header {
   background-position: center;
 }
 
-body > header img {
+@media only screen and (min-width: 1024px) {
+  body > div > header {
+    height: 400px;
+    width: 25%;
+    margin-top: 100px;
+    margin-left: 100px;
+    border: 4px double #ffb325;
+  }
+}
+
+body > div > header img {
   padding-top: 1em;
 }
 
-body > header > div > h2 {
+body > div > header > div > h2 {
   color: #fff;
   text-shadow: 1px 1px 4px black;
   margin-top: 0;
