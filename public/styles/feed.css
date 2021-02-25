@@ -60,6 +60,10 @@ footer > div {
   margin-right: 1em;
 }
 
+footer > div > a {
+  color:#ffb325;
+}
+
 article.tweet:hover {
   box-shadow: 10px 10px #ffa825;
   text-shadow: .5px .5px #ffb325;

@@ -1,24 +1,57 @@
 [
   {
     "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png",
-      "handle": "@SirIsaac"
-    },
-    "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
-    },
-    "created_at": 1614040747006
-  },
-  {
-    "user": {
-      "name": "Ponty-proom",
-      "avatars": "images/PontiffPrune-hex.png",
+      "name": "Prune",
+      "avatars": "images/pfps/restricted/PontiffPrune-hex.png",
       "handle": "@PontiffPrune"
     },
     "content": {
       "text": "Henlo i am new to Irithyll but i am definitely NOT invading :D (please be nice to me or i will cry)"
     },
-    "created_at": 1614127147006
+    "created_at": 1613789245107
+  },
+  {
+    "user": {
+      "name": "Lorian ✨️",
+      "avatars": "images/pfps/restricted/lorian-hex.png",
+      "handle": "@demonslayer69"
+    },
+    "content": {
+      "text": "Uggh can some1 come over?? Im so bored rn & little bro is asleep"
+    },
+    "created_at": 1613875645107
+  },
+  {
+    "user": {
+      "name": "Hawkwood The Deserter",
+      "avatars": "images/pfps/restricted/hawkwood-hex.png",
+      "handle": "@legionsuxx"
+    },
+    "content": {
+      "text": "This app is giving me conniptions..."
+    },
+    "created_at": 1613962045107
+  },
+  {
+    "user": {
+      "name": "Siegward of Catarina",
+      "avatars": "images/pfps/restricted/onion-hex.png",
+      "handle": "@stormruler0505"
+    },
+    "content": {
+      "text": "Hmm... Mmmmmm... Hmmm..."
+    },
+    "created_at": 1614048445107
+  },
+  {
+    "user": {
+      "name": "Prince Lothric",
+      "avatars": "images/pfps/restricted/lothric-hex.png",
+      "handle": "@princelothric"
+    },
+    "content": {
+      "text": "Another day towards the fire fading is another day well spent."
+    },
+    "created_at": 1614134845107
   }
 ]

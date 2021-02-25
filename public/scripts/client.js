@@ -28,6 +28,11 @@ const datePosted = (object) => {
   } 
 }
 
+const escape = (str) => {
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
 
 //-------------------------------------------
 
@@ -46,14 +51,14 @@ $(document).ready(() => {
       <a href="#" class="username">${object.user.handle}</a>
     </header>
     <div class="tweet-content">
-      <p>${object.content.text}</p>
+      <p>${escape(object.content.text)}</p>
     </div>
     <footer>
       <p>${datePosted(object)}</p>
       <div>
-        <a href="">like</a>
-        <a href="">share</a>
-        <a href="">report</a>
+        <a href="#"><i class="fas fa-heart"></i></a>
+        <a href="#"><i class="fas fa-retweet"></i></a>
+        <a href="#"><i class="fas fa-flag"></i></a>
       </div>
     </footer>
   </article>
