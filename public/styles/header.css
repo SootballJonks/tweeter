@@ -6,7 +6,7 @@ body > header {
   align-items: center;
   justify-content: center;
   background-color: #361600;
-  background-image: url("/images/header-banner.png");
+  background-image: url("/assets/images/header-banner.png");
   background-position: center;
 }
 
@@ -16,6 +16,6 @@ body > header img {
 
 body > header > div > h2 {
   color: #fff;
-
+  text-shadow: 1px 1px 4px black;
   margin-top: 0;
 }

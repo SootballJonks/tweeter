@@ -105,16 +105,29 @@ $(document).ready(() => {
     if (!tweetContent.val().length) {
       $(".popup-error").text(`First thou must type a message before it may be heard...`);
       $(".popup-error").slideDown();
+      $(".popup-error").delay(3000);
+      $(".popup-error").slideUp();
     } else if (tweetContent.val().length > 140) {
       $(".popup-error").text(`How gracious of thee, to provide more than what can be posted...`);
       $(".popup-error").slideDown();
+      $(".popup-error").delay(3000);
+      $(".popup-error").slideUp();
     } else {
       const text = tweetContent.serialize();
       $(".popup-error").slideUp();
       postTweet(text);
       resetTextArea();
     }
+  })
 
+  //text-box slidedown animation
+  $(".show-textarea").on('click', () => {
+    $("section.new-tweet").slideToggle();
+    $("#tweet-text").focus();
+  })
 
+  //Homeward Bone button
+  $(".scroll-button").on('click', () => {
+    $(window).scrollTop(0);
   })
 })

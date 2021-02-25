@@ -29,8 +29,8 @@ module.exports = {
    
     const avatars = {
     
-      Female: ["images/pfps/cleric-hex.png", "images/pfps/sirris-hex.png", "images/pfps/yuria-hex.png", "images/pfps/firekeeper-hex.png", "images/pfps/karla-hex.png"],
-      Male: ["images/pfps/abyssWatcher-hex.png", "images/pfps/herald-hex.png", "images/pfps/hollow1-hex.png", "images/pfps/eygon-hex.png", "images/pfps/hollow2-hex.png"]
+      Female: ["assets/images/pfps/cleric-hex.png", "assets/images/pfps/sirris-hex.png", "assets/images/pfps/yuria-hex.png", "assets/images/pfps/firekeeper-hex.png", "assets/images/pfps/karla-hex.png"],
+      Male: ["assets/images/pfps/abyssWatcher-hex.png", "assets/images/pfps/herald-hex.png", "assets/images/pfps/hollow1-hex.png", "assets/images/pfps/eygon-hex.png", "assets/images/pfps/hollow2-hex.png"]
     
     }
     
