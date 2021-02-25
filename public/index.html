@@ -47,7 +47,7 @@
     <main class="container">
       <section class="new-tweet">
         <h2>Add Kindling To The Fire</h2>
-        <form method="POST" action="/tweets">
+        <form method="POST" action="/tweets" id="crush-ember">
           <textarea name="text" id="tweet-text" placeholder="Speak thine heart's desire..."></textarea>
           <div>
             <button type="submit">Crush Ember</button>
@@ -55,30 +55,9 @@
           </div>
         </form>
       </section>
-      <!-- Tweeter Feed -->
+      <!-- Ember Feed -->
       <section id="feed">
-        <article class="tweet">
-          <header>
-            <div>
-              <!-- Author pfp/displayname -->
-              <img src="images/PontiffPrune-hex.png" name="pfp">
-              <p>ponty proon</p>
-            </div>
-            <!-- handle -->
-            <a href="#" class="username">@PontiffPrune</a>
-          </header>
-          <div class="tweet-content">
-            <p>Henlo i am new to Irithyll but i am definitely NOT invading :D (please be nice to me or i will cry) </p>
-          </div>
-          <footer>
-            <p>[date posted]</p>
-            <div>
-              <a href="">like</a>
-              <a href="">share</a>
-              <a href="">report</a>
-            </div>
-          </footer>
-        </article>
+        <!-- check client.js for loading tweets -->
       </section>
     </main>
   </body>

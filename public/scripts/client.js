@@ -4,33 +4,30 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
 */
 
-//------ Temporary database --------------
 
+//------- HELPER FUNCTIONS (please consider moving these) ------
 
-const data = [
-  {
-    "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png"
-      ,
-      "handle": "@SirIsaac"
-    },
-    "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
-    },
-    "created_at": 1461116232227
-  },
-  {
-    "user": {
-      "name": "Descartes",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd" },
-    "content": {
-      "text": "Je pense , donc je suis"
-    },
-    "created_at": 1461113959088
-  }
-]
+const resetTextArea = () => {
+  $('output.counter')[0].value = 140;
+  $('#tweet-text').val('');
+};
+
+const datePosted = (object) => {
+  const time = (Date.now() - object.created_at) / 1000;
+
+  if (time < 60) {
+    return `${time.toFixed(0)} seconds ago`;
+  } else if (time < 60 * 60) {
+    return `${(time / 60).toFixed(0)} minutes ago`;
+  } else if (time < 60 * 60 * 24) {
+    return `${(time / 60 / 60).toFixed(0)} hours ago`;
+  } else if (time < 60 * 60 * 60 * 365) {
+    return `${(time / 60 / 60 / 24).toFixed(0)} days ago`;
+  } else {
+    return `${(time / 60 / 60 / 24 / 365).toFixed(0)} years ago`;
+  } 
+}
+
 
 //-------------------------------------------
 
@@ -52,7 +49,7 @@ $(document).ready(() => {
       <p>${object.content.text}</p>
     </div>
     <footer>
-      <p>[date posted]</p>
+      <p>${datePosted(object)}</p>
       <div>
         <a href="">like</a>
         <a href="">share</a>
@@ -66,13 +63,50 @@ $(document).ready(() => {
   }
 
   const renderTweets = (tweets) => {
+    $('#feed').empty();
+
     for (let obj of tweets) {
       const $tweet = createTweetElement(obj);
       $('#feed').prepend($tweet);
     }
   }
 
-  renderTweets(data);
+  const loadTweets = () => {
+    $.ajax({
+      url: '/tweets',
+      method: 'GET'
+    })
+      .then((result) => {
+        renderTweets(result)
+      })
+  }
+
+  loadTweets();
+
+  const postTweet = (content) => {
+
+    $.ajax({url: '/tweets', method: 'POST', data: content})
+      .then((result) => {
+        console.log(result);
+        loadTweets();
+      })
+  }
+
+  $('#crush-ember').on('submit', (event) => {
+    event.preventDefault();
+
+    const tweetContent = $('#tweet-text');
+
+    if (!tweetContent.val().length) {
+      alert(`First thou must type a message before it may be heard...`);
+    } else if (tweetContent.val().length > 140) {
+      alert(`How gracious of thee, to provide more than what can be posted...`);
+    } else {
+      const text = tweetContent.serialize();
+      postTweet(text);
+      resetTextArea();
+    }
 
 
+  })
 })
