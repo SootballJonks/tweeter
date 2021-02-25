@@ -27,11 +27,11 @@ nav .nav-right button {
   cursor: pointer;
 }
 
-
 nav .nav-right button:hover {
   background-color: #ffb325;
 }
 
+/* HOMEWARD BONE BUTTON */
 .scroll-button {
   position: fixed;
   bottom: 20px;

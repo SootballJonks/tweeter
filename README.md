@@ -1,6 +1,10 @@
-# Tweeter Project
+# BONFYRE Project
 
-Tweeter is a simple, single-page Twitter clone.
+Bonfyre (formerly Tweeter) is a simple, single-page Twitter clone.
+
+Bonfyre's theme is inspired by the video-game DARK SOULS III by From Software Inc. . Icons and art are taken from the DSIII:DesignWorks artbook.
+
+
 
 This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
 

@@ -5,7 +5,7 @@
 */
 
 
-//------- HELPER FUNCTIONS (consider moving these) ------
+//------- HELPER FUNCTIONS  ---------
 
 const resetTextArea = () => {
   $('output.counter')[0].value = 140;
@@ -66,6 +66,8 @@ $(document).ready(() => {
 
     return $element;
   };
+
+  // rendering, loading, and posting new tweets:
 
   const renderTweets = (tweets) => {
     $('#feed').empty();
